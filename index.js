@@ -58,9 +58,9 @@ module.exports = function (options) {
             file.contents = new Buffer(transportModule);
 
             this.push(file);
-
-            cb();
         }
+        
+        cb();
     })
 
     return stream;
